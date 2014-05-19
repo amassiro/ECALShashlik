@@ -1,4 +1,4 @@
 ECALShashlik
 ============
 
-Instructions
+Instructions for examples and more
