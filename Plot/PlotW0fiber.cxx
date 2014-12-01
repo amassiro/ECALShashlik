@@ -3,11 +3,11 @@
  
  TCanvas *cc = new TCanvas("cc","",180,52,550,550);
  
- int n = 11;
+ int n = 10;
  
- //----              1        2        3        4        5         6        7        8        9       10        11
- Double_t x[100] = { 2.9,     3.1,     3.2,     3.3,     3.35,    3.4,     3.5,     3.6,     3.8,     4.0,     4.4,   };
- Double_t y[100] = { 14.293,  9.85068, 8.98689, 8.66378, 8.60585, 8.66100, 8.93844, 9.4029,  10.5937, 11.4263, 11.8821};
+ //----              1        2        3        4        5        6        7        8        9       10
+ Double_t x[100] = {4.0,     4.5,     4.6,     4.7,     4.8,     4.9,     5.0,     5.1,     5.5,     6.0};
+ Double_t y[100] = {15.7,    9.965,   9.00349, 8.57337, 8.54078, 8.9119,  9.12975, 9.5996, 11.0945,  12.526};
  
 //---- possible scale factors
  for (int i=0; i<n; i++) {
@@ -52,6 +52,8 @@
  
  
  
+ 
+ 
  TCanvas *cclog = new TCanvas("cclog","",180,52,550,550);
  
  
@@ -72,7 +74,7 @@
  cclog->SetRightMargin(0.05);
  cclog->SetBottomMargin(0.12);
  cclog->SetFrameBorderMode(0);
-
+ 
  grlog->SetTitle("");
  grlog->SetMarkerStyle(21);
  grlog->SetMarkerColor(kRed);
@@ -85,6 +87,5 @@
  
  tex->Draw("same");
  tex2->Draw("same");
- 
  
 }
